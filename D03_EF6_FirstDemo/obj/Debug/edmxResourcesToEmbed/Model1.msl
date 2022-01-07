@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestaoFormaçaoDBModelStoreContainer" CdmEntityContainer="GestaoFormaçaoDBEntities">
+    <EntitySetMapping Name="AreaCurso">
+      <EntityTypeMapping TypeName="GestaoFormaçaoDBModel.AreaCurso">
+        <MappingFragment StoreEntitySet="AreaCurso">
+          <ScalarProperty Name="AreaCursoId" ColumnName="AreaCursoId" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Curso">
+      <EntityTypeMapping TypeName="GestaoFormaçaoDBModel.Curso">
+        <MappingFragment StoreEntitySet="Curso">
+          <ScalarProperty Name="CursoID" ColumnName="CursoID" />
+          <ScalarProperty Name="SubAreaCursoID" ColumnName="SubAreaCursoID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Duração" ColumnName="Duração" />
+          <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+          <ScalarProperty Name="DataFim" ColumnName="DataFim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubAreaCurso">
+      <EntityTypeMapping TypeName="GestaoFormaçaoDBModel.SubAreaCurso">
+        <MappingFragment StoreEntitySet="SubAreaCurso">
+          <ScalarProperty Name="SubAreaCursoID" ColumnName="SubAreaCursoID" />
+          <ScalarProperty Name="AreaCursoID" ColumnName="AreaCursoID" />
+          <ScalarProperty Name="SubArea" ColumnName="SubArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

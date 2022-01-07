@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\D03_EF6_FirstDemo.exe.config
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\D03_EF6_FirstDemo.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\D03_EF6_FirstDemo.pdb
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\obj\Debug\D03_EF6_FirstDemo.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\obj\Debug\D03_EF6_FirstDemo.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\obj\Debug\D03_EF6_FirstDemo.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D03_EF6_FirstDemo\obj\Debug\D03_EF6_FirstDemo.pdb

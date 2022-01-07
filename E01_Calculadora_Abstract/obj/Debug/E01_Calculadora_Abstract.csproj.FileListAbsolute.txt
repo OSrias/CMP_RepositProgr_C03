@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\bin\Debug\E01_Calculadora_Abstract.exe.config
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\bin\Debug\E01_Calculadora_Abstract.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\bin\Debug\E01_Calculadora_Abstract.pdb
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\obj\Debug\E01_Calculadora_Abstract.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\obj\Debug\E01_Calculadora_Abstract.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\obj\Debug\E01_Calculadora_Abstract.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E01_Calculadora_Abstract\obj\Debug\E01_Calculadora_Abstract.pdb

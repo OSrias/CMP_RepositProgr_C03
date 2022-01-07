@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\bin\Debug\E02_Calculadora_Interface.exe.config
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\bin\Debug\E02_Calculadora_Interface.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\bin\Debug\E02_Calculadora_Interface.pdb
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\obj\Debug\E02_Calculadora_Interface.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\obj\Debug\E02_Calculadora_Interface.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\obj\Debug\E02_Calculadora_Interface.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\2021-10-27\BE\E02_Calculadora_Interface\obj\Debug\E02_Calculadora_Interface.pdb

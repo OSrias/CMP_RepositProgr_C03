@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\obj\Debug\D04_LINQ.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\bin\Debug\D04_LINQ.exe.config
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\bin\Debug\D04_LINQ.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\bin\Debug\D04_LINQ.pdb
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\obj\Debug\D04_LINQ.exe
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\obj\Debug\D04_LINQ.pdb
+C:\Users\user\Desktop\Rumos_AC_PFP\C03_BE\15-11-2021\BE\D04_LINQ\obj\Debug\D04_LINQ.csproj.AssemblyReference.cache

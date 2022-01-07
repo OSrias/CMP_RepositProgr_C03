@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestaoFormaçaoDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AreaCurso">
+    <Key>
+      <PropertyRef Name="AreaCursoId" />
+    </Key>
+    <Property Name="AreaCursoId" Type="Int32" Nullable="false" />
+    <Property Name="Area" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SubAreaCurso" Relationship="Self.FK_SubAreaCurso_AreaCurso" FromRole="AreaCurso" ToRole="SubAreaCurso" />
+  </EntityType>
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="CursoID" />
+    </Key>
+    <Property Name="CursoID" Type="Int32" Nullable="false" />
+    <Property Name="SubAreaCursoID" Type="Int32" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Duração" Type="Decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="DataInicio" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DataFim" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="SubAreaCurso" Relationship="Self.FK_Curso_SubAreaCurso" FromRole="Curso" ToRole="SubAreaCurso" />
+  </EntityType>
+  <EntityType Name="SubAreaCurso">
+    <Key>
+      <PropertyRef Name="SubAreaCursoID" />
+    </Key>
+    <Property Name="SubAreaCursoID" Type="Int32" Nullable="false" />
+    <Property Name="AreaCursoID" Type="Int32" Nullable="false" />
+    <Property Name="SubArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AreaCurso" Relationship="Self.FK_SubAreaCurso_AreaCurso" FromRole="SubAreaCurso" ToRole="AreaCurso" />
+    <NavigationProperty Name="Curso" Relationship="Self.FK_Curso_SubAreaCurso" FromRole="SubAreaCurso" ToRole="Curso" />
+  </EntityType>
+  <Association Name="FK_SubAreaCurso_AreaCurso">
+    <End Role="AreaCurso" Type="Self.AreaCurso" Multiplicity="1" />
+    <End Role="SubAreaCurso" Type="Self.SubAreaCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreaCurso">
+        <PropertyRef Name="AreaCursoId" />
+      </Principal>
+      <Dependent Role="SubAreaCurso">
+        <PropertyRef Name="AreaCursoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Curso_SubAreaCurso">
+    <End Role="SubAreaCurso" Type="Self.SubAreaCurso" Multiplicity="1" />
+    <End Role="Curso" Type="Self.Curso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubAreaCurso">
+        <PropertyRef Name="SubAreaCursoID" />
+      </Principal>
+      <Dependent Role="Curso">
+        <PropertyRef Name="SubAreaCursoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestaoFormaçaoDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AreaCurso" EntityType="Self.AreaCurso" />
+    <EntitySet Name="Curso" EntityType="Self.Curso" />
+    <EntitySet Name="SubAreaCurso" EntityType="Self.SubAreaCurso" />
+    <AssociationSet Name="FK_SubAreaCurso_AreaCurso" Association="Self.FK_SubAreaCurso_AreaCurso">
+      <End Role="AreaCurso" EntitySet="AreaCurso" />
+      <End Role="SubAreaCurso" EntitySet="SubAreaCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Curso_SubAreaCurso" Association="Self.FK_Curso_SubAreaCurso">
+      <End Role="SubAreaCurso" EntitySet="SubAreaCurso" />
+      <End Role="Curso" EntitySet="Curso" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestaoFormaçaoDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AreaCurso">
+    <Key>
+      <PropertyRef Name="AreaCursoId" />
+    </Key>
+    <Property Name="AreaCursoId" Type="int" Nullable="false" />
+    <Property Name="Area" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="CursoID" />
+    </Key>
+    <Property Name="CursoID" Type="int" Nullable="false" />
+    <Property Name="SubAreaCursoID" Type="int" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Duração" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+    <Property Name="DataInicio" Type="date" Nullable="false" />
+    <Property Name="DataFim" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubAreaCurso">
+    <Key>
+      <PropertyRef Name="SubAreaCursoID" />
+    </Key>
+    <Property Name="SubAreaCursoID" Type="int" Nullable="false" />
+    <Property Name="AreaCursoID" Type="int" Nullable="false" />
+    <Property Name="SubArea" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Curso_SubAreaCurso">
+    <End Role="SubAreaCurso" Type="Self.SubAreaCurso" Multiplicity="1" />
+    <End Role="Curso" Type="Self.Curso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubAreaCurso">
+        <PropertyRef Name="SubAreaCursoID" />
+      </Principal>
+      <Dependent Role="Curso">
+        <PropertyRef Name="SubAreaCursoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubAreaCurso_AreaCurso">
+    <End Role="AreaCurso" Type="Self.AreaCurso" Multiplicity="1" />
+    <End Role="SubAreaCurso" Type="Self.SubAreaCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreaCurso">
+        <PropertyRef Name="AreaCursoId" />
+      </Principal>
+      <Dependent Role="SubAreaCurso">
+        <PropertyRef Name="AreaCursoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestaoFormaçaoDBModelStoreContainer">
+    <EntitySet Name="AreaCurso" EntityType="Self.AreaCurso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Curso" EntityType="Self.Curso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SubAreaCurso" EntityType="Self.SubAreaCurso" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Curso_SubAreaCurso" Association="Self.FK_Curso_SubAreaCurso">
+      <End Role="SubAreaCurso" EntitySet="SubAreaCurso" />
+      <End Role="Curso" EntitySet="Curso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubAreaCurso_AreaCurso" Association="Self.FK_SubAreaCurso_AreaCurso">
+      <End Role="AreaCurso" EntitySet="AreaCurso" />
+      <End Role="SubAreaCurso" EntitySet="SubAreaCurso" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
